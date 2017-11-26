@@ -1,0 +1,31 @@
+{
+  "name": "messanger-app-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/peterblazejewicz/messanger-app-next.git",
+  "author": "Peter Blazejewicz",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf Pages/*.js",
+    "dev:next": "next",
+    "dev": "run-p tsc:watch dev:next",
+    "tsc:watch": "tsc --pretty --watch",
+    "prebuild": "tsc",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "@types/next": "^2.4.6",
+    "@types/react": "^16.0.25",
+    "@types/react-dom": "^16.0.3",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "next": "^4.1.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  }
+}

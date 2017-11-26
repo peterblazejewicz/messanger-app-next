@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "jsx": "react-native",
+      "module": "esnext",
+      "strict": true,
+      "target": "esnext",
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true
+    }
+  }
