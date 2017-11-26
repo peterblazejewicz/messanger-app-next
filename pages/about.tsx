@@ -1,23 +1,21 @@
+const backgroundColor = '#eee';
+
 export default () => (
-  <div>
-    Hello world
-    <p>scoped!</p>
+  <div className="hello">
+    <p>Hello World</p>
     <style jsx>{`
-      p {
-        color: blue;
-      }
-      div {
-        background: red;
-      }
-      @media (max-width: 600px) {
-        div {
-          background: blue;
+      $color: red;
+      .hello {
+        background-color: ${backgroundColor};
+        padding: 100px;
+        text-align: center;
+        transition: 100ms ease-in background;
+        &:hover {
+          color: $color;
         }
-      }
-    `}</style>
-    <style global jsx>{`
-      body {
-        background: black;
+        @media only screen and (max-width: 480px) {
+          font-size: 20px;
+        }
       }
     `}</style>
   </div>
